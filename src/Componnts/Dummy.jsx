@@ -89,7 +89,7 @@ const Dummy = () => {
                     {error && (
                         <div className="error-container" style={{ color: 'red', marginTop: '10px' }}>
                             <Alert severity="warning" onClose={() => {setError(false) }}>
-                                This Alert displays the default close icon.
+                                Error! This image File does not Exist
                             </Alert>
                         </div>
                     )}
@@ -112,8 +112,8 @@ const Dummy = () => {
                             </div>
                         </div>
                     )}
-                    {loading && (
-                        <div className="loading-container" style={{ marginTop: '10px' }}>
+                    {loading &&  (
+                        <div className="loading-container" style={{ marginTop: '10px', textAlign:'center' }}>
                             <CircularProgress />
                         </div>
                     )}
